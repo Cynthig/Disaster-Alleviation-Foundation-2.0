@@ -1,0 +1,36 @@
+﻿@model IEnumerable<DisasterAlleviation.Models.DisplayRecords>
+
+<body style="background-color: coral;">
+    <div class="text-center" style="margin-top:4%">
+        <h1 style="color:white;" class="display-4">The Disaster Alleviation Foundation</h1>
+        <h1 style="color:white;" class="display-4">View your donations</h1>
+        <h4 style="color:white; font-size:17px">
+            The Disaster Alleviation Foundation has transparency as one of its core values. It is important to
+            them that the collected data is accurate and always available to the right stakeholders. That is
+            why they want a web application with some pages visible to everyone, with summarised
+            information, and other pages accessible only to their employees (for editing data).
+        </h4>
+    </div>
+
+    <br />
+    <h4 style="margin-left:0px;">All disasters</h4>
+    <table border="0" cellspacing="1" cellpadding="2" class="table-bordered " style="color:white">
+        <tr>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Location</th>
+            <th>Description</th>
+        </tr>
+        @foreach (DisplayRecords d in Model)
+        {
+            <tr>
+                <td>@d.StartDate</td>
+                <td>@d.EndDate</td>
+                <td>@d.Location</td>
+                <td>@d.dDescription</td>
+            </tr>
+        }
+    </table>
+    </body>
+
+
