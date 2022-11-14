@@ -8,7 +8,7 @@ namespace DisasterAlleviation.Models
 {
     public class DisplayRecords
     {
-        SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=kamogelo;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=Cynthia;Integrated Security=True");
         public string user_id { get; set; }
         public string user_name { get; set; }
         public string user_surname { get; set; }
